@@ -1,7 +1,30 @@
 .footer{
-	& > p:first-child{
-		@include font(em(14), 600);
-		padding: rem(22) 0 rem(12);
-		text-align: center;
-	}
+	display: flex;
+	margin-top: rem(120);
+
+		& > p{
+			margin-right: rem(18);
+			font-family: $fnt-Ptsans;
+			@include font(em(22), bold);
+			color: $main-txt-col;
+		}
+
+		.date{
+			position: relative;
+			display: inline-flex;
+			padding-bottom: rem(14);
+			font-family: $fnt-Courier-new;
+			@include font(em(30), 100);
+			color: $main-checkbox-info-col;
+
+				&::after{
+					content: '';
+					height: rem(11);
+					width: 100%;
+					display: inline-flex;
+					position: absolute;
+					bottom: rem(4);
+					background: url("../img/border-line-orig.png") no-repeat;
+				}
+		}
 }

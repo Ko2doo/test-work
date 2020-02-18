@@ -1,0 +1,28 @@
+.future-plans{
+
+	.plans-title{
+		margin-top: rem(45);
+		font-family: $fnt-Ptsans;
+		@include font(em(24), bold);
+		color: $main-txt-col;
+	}
+
+	.plans-subtitle{
+		display: block;
+		margin: rem(20) 0 rem(40);
+		font-family: $fnt-Ptsans;
+		@include font(em(15), 200);
+		color: $main-sbtxtx-col;
+	}
+
+	.main-skills{
+		display: flex;
+
+			.form-group{
+				margin-right: rem(12);
+					&:last-child{
+						margin-right: 0;
+					}
+			}
+	}
+}

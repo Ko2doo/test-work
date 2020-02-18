@@ -1,41 +1,99 @@
 .skills-block{
 	width: 100%;
 	display: flex;
+	position: relative;
 
-		.skills-line{
-			position: relative;
-			display: flex;
-			width: 100%;
-			height: rem(11);
-			background: url("../../img/border-line-orig.png") no-repeat;
-		}
+	.slider {
+	  margin-top: rem(35);
+	  width: 100%;
+	}
 
-		.level{
-			width: rem(165);
-			position: absolute;
-			top: rem(28);
-			@include font(em(13), bold);
-			font-family: $fnt-Ptsans;
-			
-			&-0{
-				@extend .level;
-				left: 0;
-			}
-			&-1{
-				@extend .level;
-				left: 20%;
-			}
-			&-2{
-				@extend .level;
-				left: 55%;
-			}
-			&-3{
-				@extend .level;
+	.slider__scale {
+	  background-image: url("../img/border-line-orig.png");
+	  height: rem(11);
+	  position: relative;
+	  width: 100%;
+
+	  	&::before{
+				content: '';
+				position: absolute;
+				bottom: rem(-28);
+				height: rem(32);
+				width: rem(3);
+				background-color: $main-input-brd-col;
+	  	}
+
+	  	&::after{
+				content: '';
+				position: absolute;
+				bottom: rem(-28);
 				right: 0;
-			}
+				height: rem(32);
+				width: rem(3);
+				background-color: $main-input-brd-col;
+	  	}
+	}
 
+	.slider__pin {
+	  background-image: url("../img/polzunok.png");
+	  height: rem(14);
+	  left: calc(375px - 17px / 2);
+	  position: absolute;
+	  top: rem(-16);
+	  width: rem(17);
 
-		}
+	  &--transition {
+	    transition: left 1s ease-out;
+	  }
+	}
+
+	.slider__text-wrap {
+	  display: flex;
+	}
+
+	.slider__text {
+		font-family: $fnt-Ptsans;
+		@include font(em(13), 700);
+	  line-height: em(19);
+	  margin-top: rem(35);
+	  max-width: rem(175);
+	  padding: 0;
+
+	  &:nth-of-type(1) {
+	    margin-right: rem(86);
+	  }
+	  &:nth-of-type(2) {
+	    margin-right: rem(59);
+	    position: relative;
+				&::before{
+					content: '';
+					display: inline-flex;
+					position: absolute;
+					left: rem(1);
+					top: rem(-38);
+					width: rem(3);
+					height: rem(14);
+					background-color: $main-input-brd-col;
+				}
+	  }
+	  &:nth-of-type(3) {
+	    margin-right: rem(59);
+	    position: relative;
+				&::before{
+					content: '';
+					display: inline-flex;
+					position: absolute;
+					left: rem(1);
+					top: rem(-38);
+					width: rem(3);
+					height: rem(14);
+					background-color: $main-input-brd-col;
+				}
+	  }
+	  &:last-of-type {
+	    margin-left: auto;
+	  }
+	}
 
 
 } //--end skills-block

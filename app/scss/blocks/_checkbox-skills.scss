@@ -1,0 +1,31 @@
+.checkbox-skills{
+	margin-top: rem(75);
+
+		.skills-head{
+
+			&__title-item{
+				font-family: $fnt-Ptsans;
+				@include font(em(24), bold);
+				color: $main-txt-col;
+			}
+
+			&__subtitle-item{
+				display: block;
+				margin: rem(20) 0 rem(40);
+				font-family: $fnt-Ptsans;
+				@include font(em(15), 200);
+				line-height: rem(30);
+				color: $main-sbtxtx-col;
+			}
+		}
+
+		.main-skills{
+			@include row-flex();
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+		.col{
+			width: calc(770px / 3);
+		}
+}

@@ -58,9 +58,35 @@
 				.check-txt{
 					display: inline-flex;
 					font-family: $fnt-Ptsans;
-					@include font(em(21), bold);
+					@include font(em(18), bold);
 					padding-left: rem(28);
 					color: #000;
+				}
+
+				&--circle{
+						&::before{
+							width: rem(34);
+							height: rem(34);
+							background:{
+								image: url("../img/custom_checkbox/circle_ellips.png");
+								repeat: no-repeat;
+							}
+						}
+
+						&::after{
+							width: rem(16);
+							height: rem(16);
+							top: 0;
+							left: rem(10);
+							background:{
+								image: url("../img/custom_checkbox/rusted_sun.png");
+								repeat: no-repeat;
+							}
+						}
+
+					.check-txt{
+						padding-left: rem(32);
+					}
 				}
 		}
 	}

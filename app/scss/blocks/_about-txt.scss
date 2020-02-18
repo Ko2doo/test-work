@@ -1,0 +1,36 @@
+
+.about-txt{
+
+	.title-item{
+		font-family: $fnt-Ptsans;
+		@include font(em(24), bold);
+		color: $main-txt-col;
+	}
+
+	.subtitle-item{
+		display: block;
+		margin: rem(20) 0 rem(40);
+		font-family: $fnt-Ptsans;
+		@include font(em(15), 200);
+		line-height: rem(30);
+		color: $main-sbtxtx-col;
+	}
+
+	.info-me{
+		display: flex;
+		flex-wrap: wrap;
+
+			&__txt{
+				width: 100%;
+				display: flex;
+				font-family: $fnt-Courier-new;
+				font-family: $fnt-Courier-new;
+				@include font(em(30), 100);
+				text-decoration: underline;
+				box-sizing: border-box;
+				word-break: break-word;
+				color: $main-checkbox-info-col;
+			}
+	}
+
+}
