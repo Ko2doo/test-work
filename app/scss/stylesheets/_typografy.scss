@@ -1,0 +1,27 @@
+@font-face{
+  font-family: "Arkhip";
+  src: url("../fonts/Arkhip.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Arkhip.eot?#iefix") format("embedded-opentype"),
+  		 url("../fonts/Arkhip_font.otf") format("opentype"),
+  		 url("../fonts/Arkhip_font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+	font-family: "PT Sans", sans-serif;
+	src: url("../fonts/PTSans-Bold.ttf") format("truetype");
+	font-weight: 700;
+}
+
+@font-face{
+	font-family: "Courier New", arial;
+	src: url("../fonts/courier-new.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$fnt-Ptsans: "PT Sans", sans-serif;
+$fnt-Arkhip: "Arkhip";
+$fnt-Courier-new: "Courier New", arial;
+

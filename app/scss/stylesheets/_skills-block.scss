@@ -1,0 +1,41 @@
+.skills-block{
+	width: 100%;
+	display: flex;
+
+		.skills-line{
+			position: relative;
+			display: flex;
+			width: 100%;
+			height: rem(11);
+			background: url("../../img/border-line-orig.png") no-repeat;
+		}
+
+		.level{
+			width: rem(165);
+			position: absolute;
+			top: rem(28);
+			@include font(em(13), bold);
+			font-family: $fnt-Ptsans;
+			
+			&-0{
+				@extend .level;
+				left: 0;
+			}
+			&-1{
+				@extend .level;
+				left: 20%;
+			}
+			&-2{
+				@extend .level;
+				left: 55%;
+			}
+			&-3{
+				@extend .level;
+				right: 0;
+			}
+
+
+		}
+
+
+} //--end skills-block

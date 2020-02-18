@@ -1,0 +1,37 @@
+.header{
+	padding: rem(75) 0 rem(52);
+
+		.head-content{
+			@include col();
+			@include size(12);
+
+
+				.logotype{
+					display: flex;
+					position: relative;
+
+						&::after{
+							content: '';
+							display: flex;
+							width: rem(252);
+							height: rem(106);
+							position: absolute;
+							right: rem(-53);
+							bottom: rem(-47);
+							background:{
+								image: url("../img/zapolneno.png");
+								repeat: no-repeat;
+							}
+						}
+
+						&-img{
+							position: relative;
+							left: rem(-72);
+						}
+				}
+		}
+} // --end header
+
+.main-content{
+	margin-top: rem(10);
+}

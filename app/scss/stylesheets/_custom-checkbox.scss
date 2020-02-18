@@ -1,0 +1,67 @@
+// кастомные чекбоксы
+.main-skills{
+
+	.form-group{
+		padding: rem(8) 0 rem(8);
+
+
+		& > input[type="checkbox"] + label::after{
+			content: none;
+		}
+
+		& > input[type="checkbox"]:checked + label::after{
+			content: '';
+		}
+		
+	}
+
+	.custom-checkbox{
+
+		&__input-item{
+			opacity: 0;
+			visibility: hidden;
+			display: none;
+		}
+
+		&__label-item{
+			position: relative;
+			display: inline-flex;
+			align-items: center;
+
+				&::before,
+				&::after{
+					position: absolute;
+					content: '';
+					display: inline-flex;
+				}
+
+				&::before{
+					width: rem(19);
+					height: rem(18);
+					background:{
+						image: url("../img/custom_checkbox/ramka.png");
+						repeat: no-repeat;
+					}
+				}
+
+				&::after{
+					width: rem(21);
+					height: rem(27);
+					top: rem(-8);
+					left: rem(3);
+					background:{
+						image: url("../img/custom_checkbox/galka.png");
+						repeat: no-repeat;
+					}
+				}
+
+				.check-txt{
+					display: inline-flex;
+					font-family: $fnt-Ptsans;
+					@include font(em(21), bold);
+					padding-left: rem(28);
+					color: #000;
+				}
+		}
+	}
+} //--end form
