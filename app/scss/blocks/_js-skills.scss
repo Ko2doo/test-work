@@ -1,14 +1,10 @@
 .js-skills{
-	margin-top: rem(66);
+	margin-top: rem(45);
 	padding-bottom: rem(45);
 
 		&__head-item{
 			font-family: $fnt-Ptsans;
 			@include font(em(24), bold);
 			color: $main-txt-col;
-		}
-
-		.skills-block{
-			margin-top: rem(45);
 		}
 }

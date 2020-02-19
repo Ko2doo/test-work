@@ -28,6 +28,22 @@
 							position: relative;
 							left: rem(-72);
 						}
+
+						@media screen and (max-width: rem(546)) {
+							align-items: center;
+							flex-direction: column;
+
+							&::after{
+								right: 0;
+								position: relative;
+							}
+
+							&-img{
+								display: block;
+								margin: 0 auto;
+								left: 0;
+							}
+						}
 				}
 		}
 } // --end header

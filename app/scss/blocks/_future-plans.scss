@@ -1,7 +1,7 @@
 .future-plans{
 
 	.plans-title{
-		margin-top: rem(45);
+		margin-top: rem(60);
 		font-family: $fnt-Ptsans;
 		@include font(em(24), bold);
 		color: $main-txt-col;
@@ -9,7 +9,7 @@
 
 	.plans-subtitle{
 		display: block;
-		margin: rem(20) 0 rem(40);
+		margin: rem(20) 0 rem(20);
 		font-family: $fnt-Ptsans;
 		@include font(em(15), 200);
 		color: $main-sbtxtx-col;
@@ -23,6 +23,10 @@
 					&:last-child{
 						margin-right: 0;
 					}
+			}
+
+			@media screen and (max-width: rem(546)) {
+				flex-direction: column;
 			}
 	}
 }
